@@ -30,10 +30,6 @@ I design, build, and operate production systems with an emphasis on automation, 
 
 ---
 
-## 📈 GitHub Stats
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs?username=bernisnukic&layout=compact&theme=dark)  
-![Stats](https://github-readme-stats.vercel.app/api?username=bernisnukic&show_icons=true&count_private=true&theme=dark)
-
 ## 📫 Where to Find Me
 - Website: https://bernis.dev/  
 - Email: contact@bernis.dev  
