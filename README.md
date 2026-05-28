@@ -30,7 +30,15 @@ I design, build, and operate production systems with an emphasis on automation, 
 
 ---
 
+## 🚀 Featured Projects
+
+- **[EditClips.online](https://editclips.online/)** — Free browser-based video editing tools. FFmpeg compiled to WebAssembly for in-browser processing, with the heavier AI work (background removal, license-plate blur, frame interpolation, upscaling, generative inpainting) running on a self-hosted GPU rig I personally maintain.
+- **[FadeHost](https://fadehost.com/)** — Hosting and automation services for the gaming industry: websites, VPS, and game servers.
+
+---
+
 ## 📫 Where to Find Me
-- Website: https://bernis.dev/  
-- Email: contact@bernis.dev  
+- Website: https://bernis.dev/
+- Email: contact@bernis.dev
 - GitHub: https://github.com/bernisnukic
+- EditClips.online: https://editclips.online/about
