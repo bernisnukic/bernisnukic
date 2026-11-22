@@ -2,9 +2,9 @@
 
 I build and run hosting platforms, from the servers up.
 
-I founded [FadeHost](https://fadehost.com) in 2011 and still run it as its only engineer. It started with game
-servers and now also hosts Discord, Telegram and WhatsApp bots, web apps deployed from GitHub, managed databases and
-VPS. I built the control panel, the API, the node software and the networking behind it.
+I founded [FadeHost](https://fadehost.com) in 2011 and still run it as its only engineer. It has hosted more than
+500,000 game servers since then, and now also hosts Discord, Telegram and WhatsApp bots, web apps deployed from
+GitHub, managed databases and VPS. I built the control panel, the API, the node software and the networking behind it.
 [EditClips](https://editclips.online) is my other product: 170+ video, audio and image tools in the browser, with
 the AI and heavier jobs running on hardware I run myself. At [Bicom Systems](https://www.bicomsystems.com) I deploy
 SERVERware onto racked servers: installing over IPMI and iDRAC, setting up the network, and running the rollout with
