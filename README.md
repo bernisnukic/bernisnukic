@@ -1,44 +1,40 @@
-# Hi, I’m Bernis (bernisnukic) 👋
+# Bernis Nukic
 
-> Software & DevOps Engineer — building reliable, observable platforms and automations. Currently exploring LLMs & AI tools to augment developer workflows.
+I run infrastructure and build the software on top of it.
 
-[![Website](https://img.shields.io/badge/website-bernis.dev-0A66C2?logo=google-chrome&logoColor=white)](https://bernis.dev/) [![Email](https://img.shields.io/badge/email-contact%40bernis.dev-6f42c1?logo=gmail&logoColor=white)](mailto:contact@bernis.dev) [![GitHub](https://img.shields.io/badge/GitHub-bernisnukic-181717?logo=github&logoColor=white)](https://github.com/bernisnukic)
+I founded [FadeHost](https://fadehost.com), a game server host, in 2011 and still run it, from the control panel and
+node agents to the rollouts and monitoring behind them. At
+[Bicom Systems](https://www.bicomsystems.com) I deploy SERVERware onto racked servers: installing over IPMI and
+iDRAC, setting up the network, and running the rollout with the client from start to handover. In my own time I
+build [EditClips](https://editclips.online), browser video tools whose heavier AI jobs run on a GPU rig I maintain.
 
----
+## What I work on
 
-## 👨‍💻 About Me
-I design, build, and operate production systems with an emphasis on automation, reliability, and developer experience. I blend software engineering and platform skills to deliver scalable services and smooth developer workflows.
+- **Running a fleet.** Services in Rust and Go. Releases roll out as Temporal workflows that go to a canary first
+  and stop on the first failure. Hosted apps are isolated with nftables and sandboxed with gVisor, and the nodes
+  talk over a self-hosted Headscale mesh.
+- **Observability.** SigNoz on OpenTelemetry, Prometheus metrics from every node, and alerts that still arrive
+  when the app itself is down.
+- **GPU serving.** About 11 models on one rig, with VRAM checks before each job and recovery when a card hangs.
+  Moving the most expensive CPU job to Rust took it from 565 ms to about 45 ms per frame.
+- **Kubernetes.** [hop](https://github.com/bernisnukic/hop) runs a Go service with Terraform, Helm, CloudNativePG
+  and burn-rate SLO alerts, and its end-to-end test proves a rolling restart under load loses no requests.
 
-- 🔭 Focus: infrastructure automation, CI/CD, platform reliability, and integrating LLM/AI tools into developer tooling  
-- 🌱 Learning: practical LLM/AI toolchains and applying them to automation & developer experience  
-- 👯 Open to: collaboration on platform tooling, observability, automation, and AI-assisted developer tools  
-- ⚡ Fun fact: I like to bake cookies — I bring the same patience and experimentation to ops as to baking!
+## Open source
 
----
+- [hop](https://github.com/bernisnukic/hop): a Go link shortener and everything needed to run it on Kubernetes
+- [Headroom](https://github.com/bernisnukic/headroom): a RAM, CPU and GPU monitor for the Linux and macOS top bar,
+  in Rust with gpui
+- [Baseboard](https://github.com/bernisnukic/baseboard): an out-of-band management console for IPMI, iDRAC,
+  Lenovo IMM2 and Supermicro BMCs
+- [Airprowl](https://github.com/bernisnukic/airprowl): a Bluetooth, WiFi and sub-GHz scanner for the Linux
+  terminal
+- [CVE-2022-21667](https://github.com/advisories/GHSA-86ch-6w7v-v6xf): I found and reported a bug in soketi where
+  one empty request, with no login needed, crashed the WebSocket server
 
-## 🚀 What I Do
-- Build and operate cloud-native platforms (infrastructure as code, automated pipelines)  
-- Design CI/CD and developer workflows (GitHub Actions, GitLab CI)  
-- Containerize and orchestrate workloads
-- Develop backend and frontend services with a focus on maintainability and testability  
-- Explore ways LLMs can improve DX (documentation generation, automation scripts, smart CI checks)
+## Tools I use most
 
----
+Linux, Docker, Rust, Go, Postgres, Temporal, Prometheus, Kubernetes, Terraform, Helm, Cloudflare, TypeScript,
+Next.js and Laravel.
 
-## 🛠 Top Skills
-![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white) ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?logo=laravel&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
-
----
-
-## 🚀 Featured Projects
-
-- **[EditClips.online](https://editclips.online/)** — Free browser-based video editing tools. FFmpeg compiled to WebAssembly for in-browser processing, with the heavier AI work (background removal, license-plate blur, frame interpolation, upscaling, generative inpainting) running on a self-hosted GPU rig I personally maintain.
-- **[FadeHost](https://fadehost.com/)** — Hosting and automation services for the gaming industry: websites, VPS, and game servers.
-
----
-
-## 📫 Where to Find Me
-- Website: https://bernis.dev/
-- Email: contact@bernis.dev
-- GitHub: https://github.com/bernisnukic
-- EditClips.online: https://editclips.online/about
+[bernis.dev](https://bernis.dev) · [contact@bernis.dev](mailto:contact@bernis.dev)
